@@ -1,0 +1,58 @@
+
+<template>
+  <div>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand nav-title" href="#" style="display: inline-flex;">
+        <b-icon icon="shield-shaded" class="logo-icon"></b-icon>&nbsp;DNS Lookup
+      </a>
+
+      <div class="right-nav">
+        <a href="#">
+          <i class="fas fa-user-circle"></i>
+        </a>&nbsp;
+        <a href="#">
+          <i class="fab fa-github"></i>
+        </a>&nbsp;
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>&nbsp;
+        <a href="#">
+          <i class="fa fa-code-branch"></i>
+        </a>&nbsp;
+      </div>
+    </nav>
+    <!-- <img src="../assets/dns_icon.png" height="30"/> -->
+  </div>
+</template>
+
+
+<script>
+export default {
+  name: "Header"
+};
+</script>
+
+<style>
+/*** header ***/
+.navbar-light {
+  background-color: #36373b !important;
+}
+
+.nav-title {
+  color: #ffc107 !important;
+}
+
+nav .logo-icon {
+  margin-top: 5px;
+}
+
+.right-nav a {
+  color: #ffc107 !important;
+}
+</style>
