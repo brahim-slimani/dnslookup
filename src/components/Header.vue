@@ -22,7 +22,7 @@
         <a href="https://www.linkedin.com/in/ibrahim-slimani-184161b2/" target="_blank">
           <i class="fab fa-linkedin" title="linkedin"></i>
         </a>&nbsp;
-        <a href="https://github.com/Slimani-Ibrahim/DNSLookup" target="_blank">
+        <a href="https://github.com/Slimani-Ibrahim/dnslookup" target="_blank">
           <i class="fa fa-code-branch" title="source code"></i>
         </a>&nbsp;
       </div>
