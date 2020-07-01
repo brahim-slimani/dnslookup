@@ -76,37 +76,38 @@ export default {
     }
   }
 };
+const $ = require('jquery')
 
 //render the result lookup
 function renderResult(val, err) {
-  var targetIpElement = document.getElementById("labelResult");
-  var targetFamilyElement = document.getElementById("labelFamily");
+  let targetIpElement =  $("#labelResult");
+  let targetFamilyElement = $("#labelFamily");
 
   if (val != null) {
-    targetIpElement.innerHTML = "IP Address : " + val;
-    targetIpElement.style.color = "white";
-    targetFamilyElement.style.display = "block";
-    targetFamilyElement.innerHTML = val.includes(":")
+    targetIpElement.html("IP Address : " + val);
+    targetIpElement.css("color", "white");
+    targetFamilyElement.show();
+    targetFamilyElement.html(val.includes(":")
       ? "Address Family : IPv6"
-      : "Address Family : IPv4";
+      : "Address Family : IPv4");
   } else {
-    targetIpElement.innerHTML = err;
-    targetIpElement.style.color = "red";
-    targetFamilyElement.style.display = "none";
+    targetIpElement.html(err);
+    targetIpElement.css("color", "red");
+    targetFamilyElement.hide();
   }
 }
 
 //manipulate the loader on UI interaction
 function reactUIAction(key) {
   if (key == 0) {
-    manageDisplay("parent-result", 0);
-    manageDisplay("lookup_btn", 0);
-    manageDisplay("my-loader", 1);
+    manageDisplay("#parent-result", 0);
+    manageDisplay("#lookup_btn", 0);
+    manageDisplay("#my-loader", 1);
   } else {
     setTimeout(() => {
-      manageDisplay("parent-result", 1);
-      manageDisplay("lookup_btn", 1);
-      manageDisplay("my-loader", 0);
+      manageDisplay("#parent-result", 1);
+      manageDisplay("#lookup_btn", 1);
+      manageDisplay("#my-loader", 0);
     }, 300);
   }
 }
@@ -115,10 +116,10 @@ function reactUIAction(key) {
 function manageDisplay(element, key) {
   switch (key) {
     case 0:
-      document.getElementById(element).style.display = "none";
+      $(element).hide();
       break;
     case 1:
-      document.getElementById(element).style.display = "block";
+     $(element).show();
       break;
   }
 }

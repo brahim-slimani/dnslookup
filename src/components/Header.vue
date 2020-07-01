@@ -14,16 +14,16 @@
 
       <div class="right-nav">
         <a href="#">
-          <i class="fas fa-user-circle"></i>
+          <i class="fas fa-globe" title="portfolio"></i>
         </a>&nbsp;
         <a href="#">
-          <i class="fab fa-github"></i>
+          <i class="fab fa-github" title="github"></i>
         </a>&nbsp;
         <a href="#">
-          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-linkedin" title="linkedin"></i>
         </a>&nbsp;
         <a href="#">
-          <i class="fa fa-code-branch"></i>
+          <i class="fa fa-code-branch" title="code source"></i>
         </a>&nbsp;
       </div>
     </nav>
