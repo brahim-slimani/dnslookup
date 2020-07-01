@@ -19,9 +19,9 @@ export default {
 footer {
   position: fixed;
   bottom: 0px;
-  /* left: 0px; */
   right: 20px;
   margin-bottom: 0px;
+  margin-left: 10px;
 }
 
 .footer-content {
