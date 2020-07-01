@@ -8,7 +8,7 @@
       crossorigin="anonymous"
     />
     <nav class="navbar navbar-light">
-      <a class="navbar-brand nav-title" href="/index" style="display: inline-flex;">
+      <a class="navbar-brand nav-title" href="index" style="display: inline-flex;">
         <b-icon icon="shield-shaded" class="logo-icon"></b-icon>&nbsp;DNS Lookup
       </a>
 

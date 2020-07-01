@@ -90,7 +90,7 @@ function renderResult (val, err) {
     targetFamilyElement.show()
     targetFamilyElement.html(val.includes(':')
       ? 'Address Family : IPv6'
-      : 'Address Family : IPv4"')
+      : 'Address Family : IPv4')
   } else {
     targetIpElement.html(err)
     targetIpElement.css('color', 'red')
@@ -177,6 +177,7 @@ function manageDisplay (element, key) {
 @media (max-width: 600px) {
   .content-body {
     width: 90%;
+    margin-bottom: 30px;
   }
 
   .title-master-contnet {
