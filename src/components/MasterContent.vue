@@ -45,83 +45,83 @@
 <script>
 
 export default {
-  name: "MasterContent",
-  data() {
+  name: 'MasterContent',
+  data () {
     return {
       urlState: null,
       ipAddress: null,
       responseFrom: null
-    };
+    }
   },
   methods: {
-    //onclick lookup event
+    // onclick lookup event
     lookupEvent: async val => {
-      reactUIAction(0);
-      console.log(val);
-      this.urlState = val != null && val != "" ? val : null;
+      reactUIAction(0)
+      console.log(val)
+      this.urlState = val != null && val !== '' ? val : null
       var response = await fetch(
-        "https://dns.google/resolve?name=" + this.urlState
-      );
-      var json = await response.json();
-      console.log(json);
-      this.ipAddress = json.Answer != undefined ? json.Answer[0].data : null;
+        'https://dns.google/resolve?name=' + this.urlState
+      )
+      var json = await response.json()
+      console.log(json)
+      this.ipAddress = json.Answer !== undefined ? json.Answer[0].data : null
       this.responseFrom =
-        json.Comment != undefined
+        json.Comment !== undefined
           ? json.Comment.substring(13, json.Comment.length - 1)
-          : null;
-      let finalResult;
-      finalResult = this.ipAddress != null ? this.ipAddress : this.responseFrom;
-      renderResult(finalResult, "Enter valid URL please !");
-      reactUIAction(1);
+          : null
+      let finalResult
+      finalResult = this.ipAddress != null ? this.ipAddress : this.responseFrom
+      renderResult(finalResult, 'Enter valid URL please !')
+      reactUIAction(1)
     }
   }
-};
+}
 
 const $ = require('jquery')
 
-//render the result lookup
-function renderResult(val, err) {
-  let targetIpElement =  $("#labelResult");
-  let targetFamilyElement = $("#labelFamily");
+// render the result lookup
+function renderResult (val, err) {
+  let targetIpElement = $('#labelResult')
+  let targetFamilyElement = $('#labelFamily')
 
   if (val != null) {
-    targetIpElement.html("IP Address : " + val);
-    targetIpElement.css("color", "white");
-    targetFamilyElement.show();
-    targetFamilyElement.html(val.includes(":")
-      ? "Address Family : IPv6"
-      : "Address Family : IPv4");
+    targetIpElement.html('IP Address : ' + val)
+    targetIpElement.css('color', 'white')
+    targetFamilyElement.show()
+    targetFamilyElement.html(val.includes(':')
+      ? 'Address Family : IPv6'
+      : 'Address Family : IPv4"')
   } else {
-    targetIpElement.html(err);
-    targetIpElement.css("color", "red");
-    targetFamilyElement.hide();
+    targetIpElement.html(err)
+    targetIpElement.css('color', 'red')
+    targetFamilyElement.hide()
   }
 }
 
-//manipulate the loader on UI interaction
-function reactUIAction(key) {
-  if (key == 0) {
-    manageDisplay("#parent-result", 0);
-    manageDisplay("#lookup_btn", 0);
-    manageDisplay("#my-loader", 1);
+// manipulate the loader on UI interaction
+function reactUIAction (key) {
+  if (key === 0) {
+    manageDisplay('#parent-result', 0)
+    manageDisplay('#lookup_btn', 0)
+    manageDisplay('#my-loader', 1)
   } else {
     setTimeout(() => {
-      manageDisplay("#parent-result", 1);
-      manageDisplay("#lookup_btn", 1);
-      manageDisplay("#my-loader", 0);
-    }, 300);
+      manageDisplay('#parent-result', 1)
+      manageDisplay('#lookup_btn', 1)
+      manageDisplay('#my-loader', 0)
+    }, 300)
   }
 }
 
-//displaying element
-function manageDisplay(element, key) {
+// displaying element
+function manageDisplay (element, key) {
   switch (key) {
     case 0:
-      $(element).hide();
-      break;
+      $(element).hide()
+      break
     case 1:
-     $(element).show();
-      break;
+      $(element).show()
+      break
   }
 }
 </script>
@@ -183,5 +183,4 @@ function manageDisplay(element, key) {
     font-size: 25px;
   }
 }
-
 </style>

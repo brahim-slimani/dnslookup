@@ -2,8 +2,7 @@
   <footer class="page-footer font-small ">
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3 footer-content">
-      © 2020 Copyright Powered by 
-      <a href="https://slimani-ibrahim.github.io/profile/">Ibrahim SLIMANI</a>
+      © 2020 Copyright Powered by <a href="https://slimani-ibrahim.github.io/profile/">Ibrahim SLIMANI</a>
     </div>
     <!-- Copyright -->
   </footer>
@@ -11,8 +10,8 @@
 
 <script>
 export default {
-  name: "Footer"
-};
+  name: 'Footer'
+}
 </script>
 
 <style>
