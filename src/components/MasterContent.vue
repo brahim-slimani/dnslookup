@@ -172,4 +172,16 @@ function manageDisplay(element, key) {
 #labelFamily {
   margin-top: -15px;
 }
+
+/*** mobile viewport ***/
+@media (max-width: 600px) {
+  .content-body {
+    width: 90%;
+  }
+
+  .title-master-contnet {
+    font-size: 25px;
+  }
+}
+
 </style>
