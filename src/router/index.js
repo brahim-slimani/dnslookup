@@ -5,6 +5,7 @@ import MasterContent from '@/components/MasterContent'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
