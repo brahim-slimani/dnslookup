@@ -8,22 +8,22 @@
       crossorigin="anonymous"
     />
     <nav class="navbar navbar-light">
-      <a class="navbar-brand nav-title" href="#" style="display: inline-flex;">
+      <a class="navbar-brand nav-title" href="/index" style="display: inline-flex;">
         <b-icon icon="shield-shaded" class="logo-icon"></b-icon>&nbsp;DNS Lookup
       </a>
 
       <div class="right-nav">
-        <a href="#">
+        <a href="https://slimani-ibrahim.github.io/profile" target="_blank">
           <i class="fas fa-globe" title="portfolio"></i>
         </a>&nbsp;
-        <a href="#">
+        <a href="https://github.com/Slimani-Ibrahim" target="_blank">
           <i class="fab fa-github" title="github"></i>
         </a>&nbsp;
-        <a href="#">
+        <a href="https://www.linkedin.com/in/ibrahim-slimani-184161b2/" target="_blank">
           <i class="fab fa-linkedin" title="linkedin"></i>
         </a>&nbsp;
-        <a href="#">
-          <i class="fa fa-code-branch" title="code source"></i>
+        <a href="https://github.com/Slimani-Ibrahim/DNSLookup" target="_blank">
+          <i class="fa fa-code-branch" title="source code"></i>
         </a>&nbsp;
       </div>
     </nav>

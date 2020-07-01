@@ -76,6 +76,7 @@ export default {
     }
   }
 };
+
 const $ = require('jquery')
 
 //render the result lookup
