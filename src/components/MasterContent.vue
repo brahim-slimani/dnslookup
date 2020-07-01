@@ -11,6 +11,7 @@
       </div>
       <input
         type="text"
+        id="url-input"
         class="form-control bg-dark text-white input-url"
         v-model="urlInput"
         aria-label="Sizing example input"
@@ -124,6 +125,7 @@ function manageDisplay (element, key) {
       break
   }
 }
+
 </script>
 
 <style>
@@ -177,11 +179,12 @@ function manageDisplay (element, key) {
 @media (max-width: 600px) {
   .content-body {
     width: 90%;
-    margin-bottom: 30px;
+    margin-top: 25px;
   }
 
   .title-master-contnet {
-    font-size: 25px;
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 }
 </style>

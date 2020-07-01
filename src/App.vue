@@ -20,6 +20,20 @@ export default {
     Header, MasterContent, Footer
   }
 }
+
+const $ = require('jquery')
+
+// fix overflow footer with content in mobile viewport
+$(document).ready(function () {
+  if ($(window).width() < 600) {
+    $('#url-input').focus(function () {
+      $('footer').hide()
+    })
+    $('#url-input').focusout(function () {
+      $('footer').show()
+    })
+  }
+})
 </script>
 
 <style>
