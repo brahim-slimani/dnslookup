@@ -94,7 +94,6 @@ function renderResult (val, err) {
       : 'Address Family : IPv4')
   } else {
     targetIpElement.html(err)
-    targetIpElement.css('color', 'red')
     targetFamilyElement.hide()
   }
 }
