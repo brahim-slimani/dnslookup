@@ -13,6 +13,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:Slimani-Ibrahim/DNSLookup.git master:gh-pages
+git push -f git@github.com:brahim-slimani/DNSLookup.git master:gh-pages
 
 cd -
