@@ -1,3 +1,5 @@
 module.exports = {
-    baseUrl: '/DNSLookup/'
+    // baseUrl: '/DNSLookup/',
+    // publicUrl: '/DNSLookup/',
+    publicPath: '/dnsLookup/'
 }
