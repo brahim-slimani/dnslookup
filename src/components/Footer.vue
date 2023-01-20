@@ -4,8 +4,8 @@
     <div class="footer-copyright text-center py-3 footer-content">
       © 2020 Copyright Powered by
       <a
-        href="https://slimani-ibrahim.github.io/profile/"
-      >Ibrahim SLIMANI</a>
+        href="https://brahim-slimani.github.io/profile/"
+      >Brahim SLIMANI</a>
     </div>
     <!-- Copyright -->
   </footer>
