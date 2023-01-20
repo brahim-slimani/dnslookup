@@ -13,16 +13,16 @@
       </a>
 
       <div class="right-nav">
-        <a href="https://slimani-ibrahim.github.io/profile" target="_blank">
+        <a href="https://brahim-slimani.github.io/profile" target="_blank">
           <i class="fas fa-globe" title="portfolio"></i>
         </a>&nbsp;
-        <a href="https://github.com/Slimani-Ibrahim" target="_blank">
+        <a href="https://github.com/brahim-slimani" target="_blank">
           <i class="fab fa-github" title="github"></i>
         </a>&nbsp;
-        <a href="https://www.linkedin.com/in/ibrahim-slimani-184161b2/" target="_blank">
+        <a href="https://www.linkedin.com/in/brahim-slimani/" target="_blank">
           <i class="fab fa-linkedin" title="linkedin"></i>
         </a>&nbsp;
-        <a href="https://github.com/Slimani-Ibrahim/dnslookup" target="_blank">
+        <a href="https://github.com/brahim-slimani/dnslookup" target="_blank">
           <i class="fa fa-code-branch" title="source code"></i>
         </a>&nbsp;
       </div>
